@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dle0hov7ftat6"]
+
+[ext_resource type="Texture2D" uid="uid://b2js7nv8g3tpd" path="res://texturas/decoraciones/soporte estructural.png" id="1_mkkvv"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="SoporteEstructural" type="Sprite2D" parent="." unique_id=1468531469]
+texture = ExtResource("1_mkkvv")

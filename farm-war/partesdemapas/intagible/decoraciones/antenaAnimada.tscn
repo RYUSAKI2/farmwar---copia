@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://cxvgphjtwavru"]
+
+[ext_resource type="Texture2D" uid="uid://duib3t62lvq0p" path="res://texturas/decoraciones/animados/antenalunar/antena4.png" id="1_qr5my"]
+[ext_resource type="Texture2D" uid="uid://cw010b2m2retx" path="res://texturas/decoraciones/animados/antenalunar/antena3.png" id="2_pwgbo"]
+[ext_resource type="Texture2D" uid="uid://cmkopbb71yjne" path="res://texturas/decoraciones/animados/antenalunar/antena2.png" id="3_xg6sm"]
+[ext_resource type="Texture2D" uid="uid://bj7yfrhedx1xa" path="res://texturas/decoraciones/animados/antenalunar/antena1.png" id="4_qkosq"]
+[ext_resource type="Texture2D" uid="uid://covnxfhb1lw6y" path="res://texturas/decoraciones/animados/antenalunar/antena0.png" id="5_mhwo5"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qr5my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pwgbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xg6sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qkosq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mhwo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qkosq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xg6sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pwgbo")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_qr5my")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pwgbo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xg6sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qkosq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_mhwo5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_qkosq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xg6sm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_pwgbo")
+}],
+"loop": 1,
+"name": &"intermitente",
+"speed": 20.0
+}]
+
+[node name="AntenaAnimada" type="Node2D" unique_id=271743580]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1034976617]
+sprite_frames = SubResource("SpriteFrames_xrivr")
+autoplay = "default"
+frame_progress = 0.21226346

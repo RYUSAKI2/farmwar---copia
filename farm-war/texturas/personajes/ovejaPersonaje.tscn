@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://jnyw5tgeslem"]
+
+[ext_resource type="Texture2D" uid="uid://bcu5mmvxfre2l" path="res://texturas/Sprite_Completo.png" id="1_rm77n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(20, 19.772728)
+
+[node name="Control" type="Control" unique_id=1022158768]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -76.0
+offset_top = -50.0
+offset_right = -641.0
+offset_bottom = -50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ovejaBody2D" type="CharacterBody2D" parent="." unique_id=894607386]
+
+[node name="Sprite2D" type="Sprite2D" parent="ovejaBody2D" unique_id=713147548]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ovejaBody2D" unique_id=2117073893]
+scale = Vector2(4.3599987, 13.199999)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="SpriteCompleto2" type="Sprite2D" parent="." unique_id=697347403]
+texture = ExtResource("1_rm77n")

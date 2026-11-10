@@ -1,0 +1,271 @@
+[gd_scene format=3 uid="uid://w8drgy8ek05a"]
+
+[ext_resource type="Texture2D" uid="uid://bt3bjy8p8n4sg" path="res://texturas/terreno/fondo espacio.png" id="1_yumif"]
+[ext_resource type="PackedScene" uid="uid://bg6rh63tl3rli" path="res://partesdemapas/intagible/decoraciones/bareraluz.tscn" id="2_jemjf"]
+[ext_resource type="PackedScene" uid="uid://cxvgphjtwavru" path="res://partesdemapas/intagible/decoraciones/antenaAnimada.tscn" id="2_r6koy"]
+[ext_resource type="PackedScene" uid="uid://bht46t2hh7yut" path="res://partesdemapas/tangible/pisolunar.tscn" id="2_tg213"]
+[ext_resource type="PackedScene" uid="uid://ce0212g16nqe8" path="res://partesdemapas/tangible/bloquecontreto2.tscn" id="3_r6koy"]
+[ext_resource type="PackedScene" uid="uid://d3j28t0msltf3" path="res://partesdemapas/intagible/decoraciones/pared fondo.tscn" id="4_sps0l"]
+[ext_resource type="PackedScene" uid="uid://ymjns26hl3f" path="res://partesdemapas/tangible/bloquecontreto1.tscn" id="4_tg213"]
+[ext_resource type="PackedScene" uid="uid://cxgbvx80if22s" path="res://personajes/ovejaUsable.tscn" id="6_cclv3"]
+[ext_resource type="Script" uid="uid://dfw3oq6omverr" path="res://personajes/personajeMovimientos.gd" id="7_jemjf"]
+[ext_resource type="PackedScene" uid="uid://dhmg50fudapdk" path="res://codigo/camera_2d.tscn" id="8_skek6"]
+[ext_resource type="PackedScene" uid="uid://dcon8ra3pheik" path="res://partesdemapas/tangible/plataforama.tscn" id="10_skek6"]
+[ext_resource type="PackedScene" uid="uid://7m8nufhhgu1y" path="res://partesdemapas/tangible/paredlunar.tscn" id="11_ou2hh"]
+[ext_resource type="Texture2D" uid="uid://3apeuds8ay0a" path="res://texturas/interfaz/mira hud.png" id="12_3hvxc"]
+[ext_resource type="PackedScene" uid="uid://1t2eh7yi6kgr" path="res://partesdemapas/tangible/escalera estrutural.tscn" id="13_dg3iv"]
+[ext_resource type="PackedScene" uid="uid://bb5j4eoijjkhu" path="res://partesdemapas/tangible/piso estrutura.tscn" id="13_ftost"]
+[ext_resource type="PackedScene" uid="uid://b6m7n4nxwevtf" path="res://partesdemapas/tangible/piso estructural.tscn" id="14_af0aj"]
+[ext_resource type="PackedScene" uid="uid://bfbj5ieac2whr" path="res://partesdemapas/tangible/piso estrutural.tscn" id="15_af0aj"]
+[ext_resource type="PackedScene" uid="uid://dcqy6vhej8q38" path="res://partesdemapas/intagible/decoraciones/rover.tscn" id="16_fsxhp"]
+[ext_resource type="PackedScene" uid="uid://bqmxitnebrb8m" path="res://partesdemapas/intagible/decoraciones/piedras.tscn" id="17_sps0l"]
+[ext_resource type="PackedScene" uid="uid://nwflnjrnvxyx" path="res://partesdemapas/intagible/decoraciones/estructura dobla.tscn" id="18_3hvxc"]
+[ext_resource type="PackedScene" uid="uid://dle0hov7ftat6" path="res://partesdemapas/intagible/decoraciones/fondo estructura.tscn" id="19_a46so"]
+
+[node name="Luna" type="Node2D" unique_id=945693825]
+scale = Vector2(0.9600014, 0.8400009)
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=514699241]
+z_index = -1
+position = Vector2(0, -252)
+scale = Vector2(2.1200492, 1.7506917)
+texture = ExtResource("1_yumif")
+metadata/_edit_lock_ = true
+
+[node name="decoraciones traseras" type="Node2D" parent="Sprite2D" unique_id=787361535]
+metadata/_edit_lock_ = true
+
+[node name="Node2D10" parent="Sprite2D/decoraciones traseras" unique_id=317272966 instance=ExtResource("18_3hvxc")]
+position = Vector2(-360.64362, 282.66364)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D11" parent="Sprite2D/decoraciones traseras" unique_id=1916902942 instance=ExtResource("19_a46so")]
+position = Vector2(69.8097, 365.5698)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D11" parent="Sprite2D/decoraciones traseras/Node2D11" unique_id=1704609858 instance=ExtResource("19_a46so")]
+position = Vector2(756.16534, -272.52393)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D12" parent="Sprite2D/decoraciones traseras/Node2D11" unique_id=425109512 instance=ExtResource("19_a46so")]
+position = Vector2(1032.2067, -272.52393)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D12" parent="Sprite2D/decoraciones traseras" unique_id=930626047 instance=ExtResource("4_sps0l")]
+z_as_relative = false
+position = Vector2(-47.640404, 396.98596)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D8" parent="Sprite2D/decoraciones traseras" unique_id=1650458199 instance=ExtResource("16_fsxhp")]
+position = Vector2(-696.2289, 77.30287)
+rotation = -0.21113634
+scale = Vector2(0.25623965, 0.3531612)
+
+[node name="Node2D13" parent="Sprite2D/decoraciones traseras" unique_id=766999985 instance=ExtResource("19_a46so")]
+z_index = 1
+position = Vector2(426.4832, 297.6237)
+scale = Vector2(0.22248878, 0.32627264)
+
+[node name="Node2D14" parent="Sprite2D/decoraciones traseras" unique_id=1402674463 instance=ExtResource("19_a46so")]
+z_index = 1
+position = Vector2(426.4832, 385.344)
+scale = Vector2(0.22248878, 0.32627264)
+
+[node name="Node2D15" parent="Sprite2D/decoraciones traseras" unique_id=195720398 instance=ExtResource("19_a46so")]
+z_index = 1
+position = Vector2(426.4832, 471.02435)
+scale = Vector2(0.22248878, 0.32627264)
+
+[node name="Node2D16" parent="Sprite2D/decoraciones traseras" unique_id=131278714 instance=ExtResource("19_a46so")]
+z_index = 1
+position = Vector2(556.68835, 297.62366)
+scale = Vector2(0.22248878, 0.32627264)
+
+[node name="Node2D17" parent="Sprite2D/decoraciones traseras" unique_id=1860050373 instance=ExtResource("19_a46so")]
+z_index = 1
+position = Vector2(556.68835, 385.344)
+scale = Vector2(0.22248878, 0.32627264)
+
+[node name="Node2D18" parent="Sprite2D/decoraciones traseras" unique_id=1364545122 instance=ExtResource("19_a46so")]
+z_index = 1
+position = Vector2(556.68835, 471.02435)
+scale = Vector2(0.22248878, 0.32627264)
+
+[node name="Node2D19" parent="Sprite2D/decoraciones traseras" unique_id=70951655 instance=ExtResource("19_a46so")]
+position = Vector2(-401.9162, 182.02325)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D11" parent="Sprite2D/decoraciones traseras/Node2D19" unique_id=940584562 instance=ExtResource("19_a46so")]
+position = Vector2(-896.87366, 423.80902)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D12" parent="Sprite2D/decoraciones traseras/Node2D19" unique_id=385404530 instance=ExtResource("19_a46so")]
+position = Vector2(-896.8738, 271.42828)
+scale = Vector2(0.47168714, 0.5712028)
+
+[node name="Node2D20" parent="Sprite2D/decoraciones traseras" unique_id=1615662091 instance=ExtResource("19_a46so")]
+position = Vector2(-712.443, 464.9645)
+scale = Vector2(-0.3334825, 0.5341399)
+
+[node name="Node2D21" parent="Sprite2D/decoraciones traseras" unique_id=135212742 instance=ExtResource("19_a46so")]
+position = Vector2(-712.4431, 312.58377)
+scale = Vector2(-0.31462964, 0.6102066)
+
+[node name="Node2D9" parent="Sprite2D/decoraciones traseras" unique_id=197633944 instance=ExtResource("19_a46so")]
+position = Vector2(729.1487, 371.74393)
+scale = Vector2(0.47168717, 0.5712028)
+
+[node name="suelo" parent="." unique_id=2027519233 instance=ExtResource("2_tg213")]
+position = Vector2(-7.999998, 864)
+scale = Vector2(2.4883075, 2.8438048)
+metadata/_edit_lock_ = true
+
+[node name="bloquealt" parent="." unique_id=639170524 instance=ExtResource("4_tg213")]
+position = Vector2(1252.0815, 473.809)
+scale = Vector2(1.1912197, 1.5095206)
+
+[node name="bloquealt2" parent="." unique_id=73886495 instance=ExtResource("4_tg213")]
+position = Vector2(1626.0391, 478.57086)
+scale = Vector2(0.3441314, 1.3333336)
+
+[node name="bloque" parent="." unique_id=53771757 instance=ExtResource("3_r6koy")]
+position = Vector2(-827, 454)
+scale = Vector2(1.9460315, 1.9906894)
+
+[node name="oveja1" parent="." unique_id=384753885 instance=ExtResource("6_cclv3")]
+z_index = 1
+position = Vector2(82.291565, -551.1902)
+scale = Vector2(0.51542526, 0.418536)
+script = ExtResource("7_jemjf")
+
+[node name="Camera2D" parent="oveja1" unique_id=964835087 instance=ExtResource("8_skek6")]
+position = Vector2(0, 1)
+ignore_rotation = false
+limit_enabled = false
+limit_left = -800
+limit_top = -800
+limit_right = 2544
+limit_bottom = 800
+limit_smoothed = true
+
+[node name="Tree" type="Tree" parent="oveja1" unique_id=2031733485]
+offset_left = -145.51074
+offset_top = -82.4862
+offset_right = -129.51074
+offset_bottom = -65.4862
+
+[node name="TextureRect" type="TextureRect" parent="oveja1/Tree" unique_id=169257492]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("12_3hvxc")
+
+[node name="plataforma" parent="." unique_id=438181933 instance=ExtResource("10_skek6")]
+position = Vector2(148, 234.99998)
+scale = Vector2(5.829138, 2.0242786)
+
+[node name="Paredlunar" parent="." unique_id=554722937 instance=ExtResource("11_ou2hh")]
+position = Vector2(1928, 57.00003)
+scale = Vector2(3.7200024, 22.99094)
+
+[node name="Paredlunar2" parent="." unique_id=1572120765 instance=ExtResource("11_ou2hh")]
+position = Vector2(-1921.8722, -127.38081)
+scale = Vector2(2.041665, 16.524525)
+
+[node name="plataforma2" parent="." unique_id=2108944382 instance=ExtResource("10_skek6")]
+z_index = 1
+position = Vector2(-851.00006, -7.999999)
+scale = Vector2(5.818844, 2.0177038)
+
+[node name="escalera estructura" parent="plataforma2" unique_id=901696571 instance=ExtResource("13_dg3iv")]
+z_as_relative = false
+position = Vector2(332.9625, 221.09027)
+scale = Vector2(-0.292, 0.929)
+
+[node name="PisoEstrutura" parent="." unique_id=2113712843 instance=ExtResource("13_ftost")]
+position = Vector2(-1595.8308, 482.14233)
+scale = Vector2(0.6079787, 4.8571386)
+
+[node name="Node2D" parent="." unique_id=151321142 instance=ExtResource("14_af0aj")]
+position = Vector2(1546.8728, 228.57118)
+
+[node name="Node2D" parent="Node2D" unique_id=1124484657 instance=ExtResource("14_af0aj")]
+position = Vector2(-2716.6626, -523.8089)
+
+[node name="Node2D2" parent="." unique_id=32308005 instance=ExtResource("3_r6koy")]
+position = Vector2(-1705, -91)
+
+[node name="Node2D3" parent="." unique_id=862743349 instance=ExtResource("4_tg213")]
+position = Vector2(-1201.0399, 492.8566)
+
+[node name="Node2D3" parent="Node2D3" unique_id=1025007568 instance=ExtResource("4_tg213")]
+position = Vector2(1399.9979, -616.666)
+scale = Vector2(1.44971, 1.2977903)
+
+[node name="Node2D4" parent="." unique_id=1176237478 instance=ExtResource("4_tg213")]
+position = Vector2(-1510.4144, 122.61891)
+
+[node name="Node2D5" parent="." unique_id=1233637521 instance=ExtResource("3_r6koy")]
+position = Vector2(-1747, 222)
+
+[node name="Node2D6" parent="." unique_id=1860703398 instance=ExtResource("15_af0aj")]
+position = Vector2(1162, -211)
+rotation = 1.5707964
+
+[node name="Node2D7" parent="." unique_id=1514338868 instance=ExtResource("15_af0aj")]
+position = Vector2(1043, -7)
+
+[node name="Node2D9" parent="." unique_id=2059075445 instance=ExtResource("17_sps0l")]
+position = Vector2(-345, 498)
+
+[node name="decoraciones de lanteras" type="Node2D" parent="." unique_id=614745904]
+z_index = 3
+position = Vector2(799.0001, 272.99988)
+metadata/_edit_lock_ = true
+
+[node name="barrera" parent="decoraciones de lanteras" unique_id=85451837 instance=ExtResource("2_jemjf")]
+position = Vector2(-1995.3896, -387.65237)
+scale = Vector2(2.1163058, 1.7450056)
+
+[node name="barrera" parent="decoraciones de lanteras/barrera" unique_id=1553865483 instance=ExtResource("2_jemjf")]
+position = Vector2(108.48804, -1.4305115e-06)
+scale = Vector2(1.0000001, 1)
+
+[node name="barrera2" parent="decoraciones de lanteras/barrera" unique_id=902839923 instance=ExtResource("2_jemjf")]
+position = Vector2(216.03267, 0)
+scale = Vector2(1.0000001, 1)
+
+[node name="barrera" parent="decoraciones de lanteras/barrera/barrera2" unique_id=20156433 instance=ExtResource("2_jemjf")]
+position = Vector2(108.48804, -1.4305115e-06)
+scale = Vector2(1.0000001, 1)
+
+[node name="AntenaAnimada" parent="decoraciones de lanteras" unique_id=271743580 instance=ExtResource("2_r6koy")]
+position = Vector2(-551.0838, 46.04739)
+rotation = 3.1415927
+
+[node name="AntenaAnimada2" parent="decoraciones de lanteras" unique_id=312950188 instance=ExtResource("2_r6koy")]
+position = Vector2(46.831947, -226.57138)
+rotation = -1.5707964
+scale = Vector2(0.29166842, 0.4285721)
+
+[node name="AntenaAnimada3" parent="decoraciones de lanteras" unique_id=1786306160 instance=ExtResource("2_r6koy")]
+position = Vector2(-2144.8315, -268.23798)
+rotation = -1.5707964
+scale = Vector2(0.29166842, 0.4285721)
+
+[node name="barrera2" parent="decoraciones de lanteras" unique_id=2093288125 instance=ExtResource("2_jemjf")]
+position = Vector2(-997.00024, -144.99992)
+scale = Vector2(2.1200497, 1.7506918)
+
+[node name="barrera" parent="decoraciones de lanteras/barrera2" unique_id=1774644744 instance=ExtResource("2_jemjf")]
+position = Vector2(108.48804, -1.4305115e-06)
+scale = Vector2(1.0000001, 1)
+
+[node name="barrera2" parent="decoraciones de lanteras/barrera2" unique_id=1242186505 instance=ExtResource("2_jemjf")]
+position = Vector2(216.03267, 0)
+scale = Vector2(1.0000001, 1)
+
+[node name="barrera" parent="decoraciones de lanteras/barrera2/barrera2" unique_id=1418448545 instance=ExtResource("2_jemjf")]
+position = Vector2(108.48804, -1.4305115e-06)
+scale = Vector2(1.0000001, 1)

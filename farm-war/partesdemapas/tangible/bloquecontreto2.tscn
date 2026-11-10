@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ce0212g16nqe8"]
+
+[ext_resource type="Texture2D" uid="uid://dysy5al1sb5iy" path="res://texturas/terreno/bloque concreto.png" id="1_0r70b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(115, 78)
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1166426086]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1587138105]
+position = Vector2(0, 0.1)
+scale = Vector2(0.99, 0.99)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Paredbolsasarena00b" type="Sprite2D" parent="." unique_id=1435549938]
+texture = ExtResource("1_0r70b")

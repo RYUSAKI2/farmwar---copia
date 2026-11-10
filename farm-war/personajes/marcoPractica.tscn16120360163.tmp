@@ -1,0 +1,36 @@
+[gd_scene format=3 uid="uid://7qe8718q7h0w"]
+
+[ext_resource type="Script" uid="uid://d084stwavukho" path="res://personajes/marco_practica.gd" id="1_24qwm"]
+[ext_resource type="Texture2D" uid="uid://crlpw1k74s250" path="res://texturas/extras/objetivo1.png" id="1_eed8h"]
+[ext_resource type="Texture2D" uid="uid://b8hkpwn70wfvc" path="res://texturas/extras/objetivo2.png" id="2_24qwm"]
+[ext_resource type="Script" uid="uid://k6xxe16hgcps" path="res://codigo/hurtbox_head.gd" id="4_axkwg"]
+[ext_resource type="Script" uid="uid://6g12xr3we4kd" path="res://personajes/hurtbox_body.gd" id="5_8ljuw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xrivr"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1916759335]
+script = ExtResource("1_24qwm")
+
+[node name="spriteMuerto" type="Sprite2D" parent="." unique_id=1026604918]
+z_index = 2
+texture = ExtResource("2_24qwm")
+
+[node name="spriteVivo" type="Sprite2D" parent="." unique_id=210592012]
+z_index = 2
+texture = ExtResource("1_eed8h")
+
+[node name="Hurtbox_Head" type="Area2D" parent="." unique_id=1204016666]
+script = ExtResource("4_axkwg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox_Head" unique_id=1546737067]
+z_index = 3
+scale = Vector2(4.8585844, 4.922293)
+shape = SubResource("CircleShape2D_xrivr")
+
+[node name="Hurtbox_Body" type="Area2D" parent="." unique_id=297966622]
+script = ExtResource("5_8ljuw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox_Body" unique_id=733246549]
+z_index = 3
+scale = Vector2(4.8585844, 4.922293)
+shape = SubResource("CircleShape2D_xrivr")

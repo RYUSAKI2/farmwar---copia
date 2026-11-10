@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bb5j4eoijjkhu"]
+
+[ext_resource type="Texture2D" uid="uid://buijubcr7imq7" path="res://texturas/terreno/suelolunarestrutura.png" id="1_3xegt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4yv0t"]
+size = Vector2(115, 78)
+
+[node name="PisoEstrutura" type="Node2D" unique_id=2113712843]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=286784819]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=800105473]
+position = Vector2(0, 0.1)
+scale = Vector2(1.0699998, 0.2299994)
+shape = SubResource("RectangleShape2D_4yv0t")
+
+[node name="Paredbolsasarena00b" type="Sprite2D" parent="." unique_id=1677373376]
+texture = ExtResource("1_3xegt")

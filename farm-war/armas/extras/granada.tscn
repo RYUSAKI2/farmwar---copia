@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bh1pkpxmo6v5d"]
+
+[ext_resource type="Texture2D" uid="uid://bie0vo373jkj8" path="res://texturas/granada.png" id="1_uxtjn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xrivr"]
+radius = 49.77
+
+[node name="Node2D" type="Node2D" unique_id=413926999]
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=1023898758]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=451073601]
+shape = SubResource("CircleShape2D_xrivr")
+
+[node name="Granada" type="Sprite2D" parent="RigidBody2D" unique_id=1843165660]
+position = Vector2(-2.3841858e-07, -13.999999)
+scale = Vector2(3.4666667, 4.030303)
+texture = ExtResource("1_uxtjn")

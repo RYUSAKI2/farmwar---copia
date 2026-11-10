@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://bh3l43fx4gs5h"]
+
+[ext_resource type="Texture2D" uid="uid://dke3xgn5tt38s" path="res://texturas/armas/deserteagler.png" id="2_vrs20"]
+[ext_resource type="PackedScene" uid="uid://e54eyfsv6xhv" path="res://armas/disparos_2d.tscn" id="3_vrs20"]
+
+[sub_resource type="GDScript" id="GDScript_1ner6"]
+script/source = "extends \"res://codigo/arma.gd\"
+
+
+func shoot():
+	for i in range(pellets):
+		print(\"Bang pellet \", i)
+"
+
+[node name="armaCaja" type="Node2D" unique_id=1308765987]
+script = SubResource("GDScript_1ner6")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=347223961]
+texture = ExtResource("2_vrs20")
+
+[node name="Node2D" parent="." unique_id=1537853222 instance=ExtResource("3_vrs20")]
+position = Vector2(-51, -23)

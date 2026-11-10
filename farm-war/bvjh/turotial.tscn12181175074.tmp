@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://dv8888bj313ao"]
+
+[ext_resource type="PackedScene" uid="uid://duwe2tngv1nck" path="res://character_body_2d.tscn" id="1_cepx7"]
+[ext_resource type="Texture2D" uid="uid://ictvrhnct4pi" path="res://texturas/terrenos/sin hitbox/tutorial.png" id="1_qd6kt"]
+[ext_resource type="Texture2D" uid="uid://cq77lcfvtjmbt" path="res://texturas/terrenos/con hitbox/tutoril.png" id="2_cepx7"]
+[ext_resource type="Script" uid="uid://dvqxgu7wxxrdr" path="res://camera_2d.gd" id="3_e4pld"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_85u1p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(214.29953, 59.122826)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_yf5fn"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_57qmd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p1u0y"]
+size = Vector2(20.149475, 22.708466)
+
+[node name="turotial" type="Node2D" unique_id=1938277059]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1205706852]
+position = Vector2(-420.00006, -251)
+scale = Vector2(4.020076, 4.3106575)
+texture = ExtResource("1_qd6kt")
+
+[node name="piso y pinchos" type="Sprite2D" parent="Sprite2D2" unique_id=1974773501]
+position = Vector2(0.995018, 35.95739)
+scale = Vector2(0.99875146, 0.8164123)
+texture = ExtResource("2_cepx7")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Sprite2D2/piso y pinchos" unique_id=1850761433]
+physics_material_override = SubResource("PhysicsMaterial_85u1p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/StaticBody2D" unique_id=732875134]
+position = Vector2(-252.55879, 170.71652)
+scale = Vector2(1.0000001, 1.0000002)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="psio2" type="RigidBody2D" parent="Sprite2D2/piso y pinchos" unique_id=1103593138]
+scale = Vector2(1.0000001, 1.0000001)
+physics_material_override = SubResource("PhysicsMaterial_yf5fn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/psio2" unique_id=1385862137]
+position = Vector2(233.12247, 159.1237)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="piso3" type="RigidBody2D" parent="Sprite2D2/piso y pinchos" unique_id=458024813]
+scale = Vector2(1.0000001, 1.0000001)
+physics_material_override = SubResource("PhysicsMaterial_yf5fn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/piso3" unique_id=1965419177]
+position = Vector2(-7.9699965, 170.48969)
+scale = Vector2(0.5695247, 0.97688055)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="pinchos" type="RigidBody2D" parent="Sprite2D2/piso y pinchos" unique_id=1121387175]
+position = Vector2(3.9850001, 2.2731934)
+physics_material_override = SubResource("PhysicsMaterial_57qmd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos" unique_id=813358595]
+position = Vector2(-150.75299, 163.45116)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.9137255, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos" unique_id=944624575]
+position = Vector2(-109.83658, 196.06317)
+rotation = 3.0237062
+scale = Vector2(1.0265398, 2.7447734)
+skew = -1.3725789
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.9764706, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos" unique_id=300825402]
+position = Vector2(-108.34233, 196.3473)
+rotation = 0.12038598
+scale = Vector2(1.0396057, -2.779264)
+skew = 1.3683678
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.9647059, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos" unique_id=1756333406]
+position = Vector2(-68.74126, 182.13985)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.9764706, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos" unique_id=1371253465]
+position = Vector2(-151.67908, 185.26546)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.96862745, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos" unique_id=189031079]
+position = Vector2(-69.48845, 159.40787)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.972549, 0, 0, 0.41960785)
+
+[node name="pinchos2" type="RigidBody2D" parent="Sprite2D2/piso y pinchos" unique_id=1393269743]
+position = Vector2(3.2378125, 3.9780905)
+physics_material_override = SubResource("PhysicsMaterial_57qmd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=2040905398]
+position = Vector2(47.32187, 161.96524)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.85882354, 0, 0.06666667, 0.41960785)
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=1958871096]
+position = Vector2(126.52376, 142.92722)
+rotation = 2.4344673
+scale = Vector2(0.83980846, 1.0701184)
+skew = -0.0090812445
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.88235295, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=1562298196]
+position = Vector2(83.43581, 195.2107)
+rotation = 3.0237062
+scale = Vector2(1.0265398, 2.7447734)
+skew = -1.3725789
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.92941177, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=1459312014]
+position = Vector2(84.93021, 195.779)
+rotation = 0.12038598
+scale = Vector2(1.0396057, -2.779264)
+skew = 1.3683678
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.9372549, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=1838821476]
+position = Vector2(128.76532, 182.13982)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.95686275, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=1202564078]
+position = Vector2(48.06906, 185.26547)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.91764706, 0, 0, 0.41960785)
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Sprite2D2/piso y pinchos/pinchos2" unique_id=1201648109]
+position = Vector2(128.26721, 159.12372)
+rotation = 0.88129354
+scale = Vector2(1.0000004, 1.0000005)
+shape = SubResource("RectangleShape2D_p1u0y")
+debug_color = Color(0.95686275, 0, 0, 0.41960785)
+
+[node name="CharacterBody2D" parent="Sprite2D2/piso y pinchos" unique_id=481531909 instance=ExtResource("1_cepx7")]
+position = Vector2(-297.3806, 28.130817)
+scale = Vector2(0.44868907, 0.026398605)
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D2/piso y pinchos/CharacterBody2D" unique_id=169394187]
+position = Vector2(0, -8.392334e-05)
+scale = Vector2(0.55508953, 10.763813)
+limit_left = -1865
+limit_top = -1102
+limit_right = 943
+limit_bottom = 623
+limit_smoothed = true
+script = ExtResource("3_e4pld")

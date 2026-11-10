@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://suqbqifcs51"]
+
+[ext_resource type="Texture2D" uid="uid://bbwewotj2fdr0" path="res://texturas/terrenos/con hitbox/Sin título.png" id="1_3sdch"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_g4v7s"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(4.5, 438)
+
+[node name="Pared" type="Node2D" unique_id=874665198]
+position = Vector2(311, 377)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=941016604]
+texture = ExtResource("1_3sdch")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="Sprite2D" unique_id=1629919913]
+physics_material_override = SubResource("PhysicsMaterial_g4v7s")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D/RigidBody2D" unique_id=795125729]
+position = Vector2(-3.25, 4)
+shape = SubResource("RectangleShape2D_57qmd")

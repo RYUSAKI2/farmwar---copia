@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://i5f466uf2j24"]
+
+[ext_resource type="Texture2D" uid="uid://cr8lfp5m82pkn" path="res://texturas/decoraciones/tanque.png" id="1_h8q21"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="Paredtierra01" type="Sprite2D" parent="." unique_id=351458850]
+position = Vector2(1, 2)
+texture = ExtResource("1_h8q21")

@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bfbj5ieac2whr"]
+
+[ext_resource type="Texture2D" uid="uid://ds7red4n8llj4" path="res://texturas/terreno/suelo estructural.png" id="1_7c52c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(115, 78)
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="Paredbolsasarena00b" type="Sprite2D" parent="." unique_id=1435549938]
+position = Vector2(0, 2)
+texture = ExtResource("1_7c52c")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1166426086]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1587138105]
+position = Vector2(-0.5, 2)
+scale = Vector2(2.7732248, 1.1199994)
+shape = SubResource("RectangleShape2D_xrivr")

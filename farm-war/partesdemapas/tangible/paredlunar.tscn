@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://7m8nufhhgu1y"]
+
+[ext_resource type="Texture2D" uid="uid://cot1nrqdyqhuh" path="res://texturas/terreno/paredVerticallunar.png" id="1_shxb8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_by2v1"]
+size = Vector2(115, 78)
+
+[node name="Paredlunar" type="Node2D" unique_id=554722937]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=979539688]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=931667753]
+position = Vector2(0, 0.1)
+scale = Vector2(0.11000013, 1.5476468)
+shape = SubResource("RectangleShape2D_by2v1")
+
+[node name="Paredbolsasarena00b" type="Sprite2D" parent="." unique_id=1597422585]
+texture = ExtResource("1_shxb8")

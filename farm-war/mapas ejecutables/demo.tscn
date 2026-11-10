@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://byvox6xjb15pb"]
+
+[ext_resource type="PackedScene" uid="uid://dsxlq0pqbe408" path="res://partesdemapas/tangible/pisotierra.tscn" id="1_6bw2v"]
+[ext_resource type="Texture2D" uid="uid://daucm271xtxwf" path="res://texturas/terreno/tutorial.png" id="1_cfeaj"]
+[ext_resource type="PackedScene" uid="uid://dilnmsra8ilu5" path="res://partesdemapas/intagible/decoraciones/arbol2.tscn" id="2_0ph3n"]
+[ext_resource type="PackedScene" uid="uid://6y7lotbswg7x" path="res://partesdemapas/tangible/paredtierra.tscn" id="2_kem5a"]
+[ext_resource type="PackedScene" uid="uid://khvorvyxn07w" path="res://partesdemapas/intagible/decoraciones/vitrina.tscn" id="2_wpex7"]
+[ext_resource type="PackedScene" uid="uid://7ibxdt2w6jef" path="res://partesdemapas/tangible/paredtierra2.tscn" id="3_gxmxl"]
+[ext_resource type="PackedScene" uid="uid://chcxtmptkbus5" path="res://partesdemapas/intagible/decoraciones/arbol.tscn" id="3_wpex7"]
+[ext_resource type="PackedScene" uid="uid://bg6rh63tl3rli" path="res://partesdemapas/intagible/decoraciones/bareraluz.tscn" id="4_goldx"]
+[ext_resource type="PackedScene" uid="uid://i5f466uf2j24" path="res://partesdemapas/intagible/decoraciones/tanque.tscn" id="5_5pvfp"]
+[ext_resource type="PackedScene" uid="uid://bh1pkpxmo6v5d" path="res://armas/extras/granada.tscn" id="5_884kg"]
+[ext_resource type="PackedScene" uid="uid://cxgbvx80if22s" path="res://personajes/ovejaUsable.tscn" id="6_2xs40"]
+[ext_resource type="PackedScene" uid="uid://dhmg50fudapdk" path="res://codigo/camera_2d.tscn" id="6_hmq3v"]
+[ext_resource type="Script" uid="uid://dfw3oq6omverr" path="res://personajes/personajeMovimientos.gd" id="7_cfeaj"]
+[ext_resource type="PackedScene" uid="uid://cquckjd8u3lmj" path="res://partesdemapas/tangible/cajapared.tscn" id="9_wfve5"]
+[ext_resource type="PackedScene" uid="uid://cnbd2sbib2ntr" path="res://partesdemapas/tangible/paredpiedra.tscn" id="10_88qrd"]
+[ext_resource type="PackedScene" uid="uid://c4swb31bwlkmu" path="res://partesdemapas/tangible/sacoarena.tscn" id="11_rxwid"]
+[ext_resource type="PackedScene" uid="uid://cy7ukovlgexdy" path="res://partesdemapas/tangible/paredroja.tscn" id="12_i5xwb"]
+[ext_resource type="PackedScene" uid="uid://cu75np15y18g8" path="res://partesdemapas/tangible/paredPiedragrietas.tscn" id="13_rm1yh"]
+[ext_resource type="PackedScene" uid="uid://cde1gtw2jm3dx" path="res://partesdemapas/tangible/paredtierra4.tscn" id="14_88qrd"]
+[ext_resource type="PackedScene" uid="uid://7qe8718q7h0w" path="res://personajes/marcoPractica.tscn" id="20_goldx"]
+
+[node name="demo" type="Node2D" unique_id=1388729314]
+
+[node name="Tutorial" type="Sprite2D" parent="." unique_id=1240085441]
+z_index = -3
+position = Vector2(878, -9)
+scale = Vector2(0.62874275, 0.47092798)
+texture = ExtResource("1_cfeaj")
+
+[node name="Node2D6" parent="Tutorial" unique_id=1704609858 instance=ExtResource("2_wpex7")]
+position = Vector2(-486.82285, -121.03759)
+scale = Vector2(1.8567115, 3.3782828)
+
+[node name="Node2D" parent="Tutorial" unique_id=996851077 instance=ExtResource("2_0ph3n")]
+position = Vector2(2303.5896, 377.97714)
+scale = Vector2(8.096026, 9.12584)
+
+[node name="Node2D2" parent="Tutorial" unique_id=931916614 instance=ExtResource("3_wpex7")]
+position = Vector2(-2580.5144, 341.87823)
+scale = Vector2(5.579225, 10.474022)
+
+[node name="Node2D3" parent="Tutorial" unique_id=1300189721 instance=ExtResource("4_goldx")]
+position = Vector2(-636.7503, 834.5225)
+scale = Vector2(9.380048, 14.241063)
+
+[node name="Node2D4" parent="Tutorial" unique_id=1216637850 instance=ExtResource("5_5pvfp")]
+position = Vector2(3501.2446, -862.1275)
+scale = Vector2(5.583128, 6.714384)
+
+[node name="Node2D5" parent="Tutorial" unique_id=636051226 instance=ExtResource("4_goldx")]
+z_index = 12
+position = Vector2(927.78577, -63.70399)
+scale = Vector2(9.380048, 14.241063)
+
+[node name="piso" parent="." unique_id=281968630 instance=ExtResource("1_6bw2v")]
+position = Vector2(884, 639)
+
+[node name="pared1" parent="." unique_id=1002020004 instance=ExtResource("2_kem5a")]
+position = Vector2(299, 457)
+
+[node name="pared2" parent="." unique_id=1957661528 instance=ExtResource("3_gxmxl")]
+position = Vector2(946, 459)
+
+[node name="pared3" parent="." unique_id=778298499 instance=ExtResource("3_gxmxl")]
+position = Vector2(1467.0001, 95)
+scale = Vector2(3.7599976, 0.44)
+
+[node name="Node2D5" parent="pared3" unique_id=2095123025 instance=ExtResource("4_goldx")]
+z_index = 12
+position = Vector2(-463.29822, -68.181816)
+scale = Vector2(-0.42039198, 4.1747)
+
+[node name="pared3" parent="pared3" unique_id=2105960398 instance=ExtResource("3_gxmxl")]
+position = Vector2(-47.606438, -1009.0907)
+scale = Vector2(-0.3919208, 0.7710341)
+
+[node name="pared4" parent="." unique_id=1614225171 instance=ExtResource("2_kem5a")]
+position = Vector2(-986.99994, 272)
+scale = Vector2(2.4400005, 3.0800006)
+
+[node name="pared5" parent="." unique_id=1150076570 instance=ExtResource("2_kem5a")]
+position = Vector2(2678, 273)
+scale = Vector2(1.5521585, 3.019324)
+
+[node name="granada1" parent="." unique_id=413926999 instance=ExtResource("5_884kg")]
+position = Vector2(746, 253)
+
+[node name="granada2" parent="." unique_id=636644135 instance=ExtResource("5_884kg")]
+position = Vector2(958, -357.00003)
+scale = Vector2(0.4420038, 0.39890787)
+
+[node name="oveja1" parent="." unique_id=384753885 instance=ExtResource("6_2xs40")]
+script = ExtResource("7_cfeaj")
+
+[node name="Camera2D" parent="oveja1" unique_id=964835087 instance=ExtResource("6_hmq3v")]
+position = Vector2(0, 1)
+ignore_rotation = false
+limit_enabled = false
+limit_left = -800
+limit_top = -800
+limit_right = 2544
+limit_bottom = 800
+limit_smoothed = true
+
+[node name="pared6" parent="." unique_id=995670426 instance=ExtResource("2_kem5a")]
+position = Vector2(-849, -266)
+
+[node name="pisofuera" parent="." unique_id=258215231 instance=ExtResource("1_6bw2v")]
+position = Vector2(4199, -75)
+
+[node name="pared7" parent="." unique_id=564769985 instance=ExtResource("3_gxmxl")]
+position = Vector2(-771.99994, 549)
+rotation = 0.8105863
+
+[node name="pared8" parent="." unique_id=1317965695 instance=ExtResource("2_kem5a")]
+position = Vector2(-851, -88)
+
+[node name="caja" parent="." unique_id=696966837 instance=ExtResource("9_wfve5")]
+position = Vector2(1987, 458)
+
+[node name="caja" parent="caja" unique_id=918589144 instance=ExtResource("9_wfve5")]
+position = Vector2(642, 0)
+
+[node name="caja2" parent="caja" unique_id=1166529298 instance=ExtResource("9_wfve5")]
+position = Vector2(641, -74)
+
+[node name="caja" parent="caja/caja2" unique_id=617456146 instance=ExtResource("9_wfve5")]
+position = Vector2(-2632.0002, -1070)
+rotation = 1.7753692
+scale = Vector2(0.319837, 3.8145165)
+
+[node name="piedra" parent="." unique_id=1426881811 instance=ExtResource("10_88qrd")]
+position = Vector2(689, -477)
+
+[node name="sacoarena" parent="." unique_id=243050293 instance=ExtResource("11_rxwid")]
+position = Vector2(2591, -198)
+
+[node name="sacoarena2" parent="." unique_id=782730514 instance=ExtResource("11_rxwid")]
+position = Vector2(685, 10)
+
+[node name="Node2D2" parent="." unique_id=2079200377 instance=ExtResource("13_rm1yh")]
+position = Vector2(832, -39)
+
+[node name="Node2D" parent="." unique_id=1215343489 instance=ExtResource("12_i5xwb")]
+position = Vector2(160, -105)
+
+[node name="sacoarena3" parent="." unique_id=372379851 instance=ExtResource("11_rxwid")]
+position = Vector2(270, 328)
+
+[node name="Node2D3" parent="." unique_id=1363234537 instance=ExtResource("10_88qrd")]
+position = Vector2(-277, 179)
+
+[node name="Node2D4" parent="." unique_id=2146714579 instance=ExtResource("14_88qrd")]
+position = Vector2(1729, -429)
+
+[node name="CharacterBody2D" parent="." unique_id=1916759335 instance=ExtResource("20_goldx")]
+position = Vector2(-683, 340)
+
+[node name="CharacterBody2D" parent="CharacterBody2D" unique_id=853295838 instance=ExtResource("20_goldx")]
+position = Vector2(-2, -243)
+
+[node name="CharacterBody2D2" parent="CharacterBody2D" unique_id=119211379 instance=ExtResource("20_goldx")]
+position = Vector2(2220, -647)
+
+[node name="CharacterBody2D" parent="CharacterBody2D/CharacterBody2D2" unique_id=1457317113 instance=ExtResource("20_goldx")]
+visible = false
+position = Vector2(-2, -243)
+
+[node name="pared9" parent="." unique_id=647887882 instance=ExtResource("3_gxmxl")]
+position = Vector2(207.99997, 550)
+rotation = 0.8105863

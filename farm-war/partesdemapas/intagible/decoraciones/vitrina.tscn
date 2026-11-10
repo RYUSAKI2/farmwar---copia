@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://khvorvyxn07w"]
+
+[ext_resource type="Texture2D" uid="uid://dsaguowkcdpfd" path="res://texturas/decoraciones/vitrina.png" id="1_f5j8i"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="textura" type="Sprite2D" parent="." unique_id=351458850]
+position = Vector2(1, 2)
+texture = ExtResource("1_f5j8i")

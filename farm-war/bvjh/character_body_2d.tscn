@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://duwe2tngv1nck"]
+
+[ext_resource type="Texture2D" uid="uid://metgwqx7u327" path="res://Sin título.png" id="2_ij6vw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0u6y"]
+size = Vector2(92.69999, 2895.4668)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=481531909]
+scale = Vector2(1.8015109, 0.09290386)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1429618969]
+position = Vector2(41.68681, 791.1404)
+scale = Vector2(0.48439315, 16.444717)
+texture = ExtResource("2_ij6vw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=671942664]
+position = Vector2(42.464355, 769.6129)
+scale = Vector2(0.99999964, 0.99999994)
+shape = SubResource("RectangleShape2D_d0u6y")
+debug_color = Color(0.9408043, 1.0396242e-05, 0.6155819, 0.41960785)

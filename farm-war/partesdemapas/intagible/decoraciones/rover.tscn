@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dcqy6vhej8q38"]
+
+[ext_resource type="Texture2D" uid="uid://karfl0bix6ky" path="res://texturas/decoraciones/rover.png" id="1_tuyog"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="textura" type="Sprite2D" parent="." unique_id=351458850]
+position = Vector2(1, 2)
+texture = ExtResource("1_tuyog")

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://c8oalvkgjnxtd"]
+
+[ext_resource type="Texture2D" uid="uid://b11prdiu7xjj6" path="res://texturas/decoraciones/luz.png" id="1_wcmkh"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="Paredtierra01" type="Sprite2D" parent="." unique_id=351458850]
+position = Vector2(1, 2)
+texture = ExtResource("1_wcmkh")

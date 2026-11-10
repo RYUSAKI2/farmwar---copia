@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bqmxitnebrb8m"]
+
+[ext_resource type="Texture2D" uid="uid://v2xb0wehgg28" path="res://texturas/decoraciones/piedras.png" id="1_y7q7x"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="textura" type="Sprite2D" parent="." unique_id=351458850]
+position = Vector2(1, 2)
+texture = ExtResource("1_y7q7x")

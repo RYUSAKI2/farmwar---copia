@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dsxlq0pqbe408"]
+
+[ext_resource type="Texture2D" uid="uid://dh2smwf5062wa" path="res://texturas/suelomapa01.png" id="1_3muf1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(3320, 100)
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="Suelomapa01" type="Sprite2D" parent="." unique_id=875502878]
+texture = ExtResource("1_3muf1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1166426086]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1587138105]
+position = Vector2(0, -40)
+shape = SubResource("RectangleShape2D_xrivr")

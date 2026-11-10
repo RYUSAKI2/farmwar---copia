@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://bg6rh63tl3rli"]
+
+[ext_resource type="Texture2D" uid="uid://bpoqndlw3l3yn" path="res://texturas/decoraciones/barreraluz.png" id="1_3606h"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="Paredtierra01" type="Sprite2D" parent="." unique_id=351458850]
+position = Vector2(1, 2)
+texture = ExtResource("1_3606h")

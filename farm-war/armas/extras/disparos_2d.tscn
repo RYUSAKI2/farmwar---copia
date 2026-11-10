@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://e54eyfsv6xhv"]
+
+[ext_resource type="Texture2D" uid="uid://btqwqbso088k7" path="res://texturas/extras/disparo.png" id="1_th580"]
+[ext_resource type="Texture2D" uid="uid://cek07k04hmcw" path="res://texturas/extras/disparo2.png" id="2_bn25v"]
+[ext_resource type="Texture2D" uid="uid://ci466jyp1froh" path="res://texturas/extras/disparo3.png" id="3_gkcvf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_xrivr"]
+animations = [{
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("1_th580")
+}, {
+"duration": 0.3,
+"texture": ExtResource("2_bn25v")
+}, {
+"duration": 0.4,
+"texture": ExtResource("3_gkcvf")
+}],
+"loop": 1,
+"name": &"disparoanimacion",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 0.2,
+"texture": ExtResource("1_th580")
+}, {
+"duration": 0.3,
+"texture": ExtResource("2_bn25v")
+}, {
+"duration": 0.4,
+"texture": ExtResource("3_gkcvf")
+}],
+"loop": 1,
+"name": &"disparoanimacion_2",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"vacio",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1537853222]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1658928143]
+sprite_frames = SubResource("SpriteFrames_xrivr")
+animation = &"disparoanimacion"
+autoplay = "disparoanimacion"
+frame_progress = 0.81462467

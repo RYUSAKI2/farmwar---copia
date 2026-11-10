@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dhmg50fudapdk"]
+
+[ext_resource type="Script" uid="uid://dxhhk7cibycfx" path="res://seguimientoCamara.gd" id="1_j4amr"]
+
+[node name="Camera2D" type="Camera2D" unique_id=964835087]
+script = ExtResource("1_j4amr")

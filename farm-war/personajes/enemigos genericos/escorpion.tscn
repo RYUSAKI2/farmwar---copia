@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ce5yb0wvpcjly"]
+
+[ext_resource type="Script" uid="uid://c2fl3ogk5cnmd" path="res://codigo/ia/escorpion.gd" id="1_0qk2y"]
+[ext_resource type="Texture2D" uid="uid://dsy2ju6eayaj1" path="res://personajes/enemigos genericos/www.png" id="1_56plp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+
+[node name="Escorpion" type="CharacterBody2D" unique_id=1532080996]
+script = ExtResource("1_0qk2y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1020122814]
+scale = Vector2(5.8799996, 6.08)
+shape = SubResource("RectangleShape2D_xrivr")
+debug_color = Color(0.9177455, 0, 0.09224128, 0.41960785)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=318112888]
+texture = ExtResource("1_56plp")

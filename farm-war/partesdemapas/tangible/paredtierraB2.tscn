@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bcm7y34q0emf5"]
+
+[ext_resource type="Texture2D" uid="uid://b1cghyygfri7h" path="res://texturas/terreno/paredtierra03b.png" id="1_s0w06"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xrivr"]
+size = Vector2(175, 177)
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1166426086]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1587138105]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_xrivr")
+
+[node name="Paredtierra02" type="Sprite2D" parent="." unique_id=524736589]
+texture = ExtResource("1_s0w06")

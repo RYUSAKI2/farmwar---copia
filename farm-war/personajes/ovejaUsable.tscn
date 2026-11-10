@@ -1,0 +1,507 @@
+[gd_scene format=3 uid="uid://cxgbvx80if22s"]
+
+[ext_resource type="Texture2D" uid="uid://tosfu32if0h8" path="res://texturas/personajes/ovejas/oveja/Sprite_Cabeza.png" id="1_0biot"]
+[ext_resource type="Texture2D" uid="uid://ciuhtblqyrtbl" path="res://texturas/personajes/ovejas/oveja/Sprite_Torso.png" id="2_mwj0j"]
+[ext_resource type="Texture2D" uid="uid://bthtpxcaihr7g" path="res://texturas/personajes/ovejas/oveja/Sprite_Pie_Izquierdo.png" id="3_dix3y"]
+[ext_resource type="Texture2D" uid="uid://brh6e8a7bhht0" path="res://texturas/personajes/ovejas/oveja/Sprite_Pie_Derecho.png" id="4_1pbc6"]
+[ext_resource type="PackedScene" uid="uid://bmbjripkagovl" path="res://armas/tipo 1/armaCajita2.tscn" id="6_0biot"]
+[ext_resource type="PackedScene" uid="uid://bjk4en85patdv" path="res://armas/tipo 1/armaCajita.tscn" id="6_orghr"]
+
+[sub_resource type="Animation" id="Animation_orghr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SpriteTorso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-2, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/manitos:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-40, -34.418602)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/manitos:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SpriteTorso:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D/SpritePieIzquierdo:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-23, 11)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D/SpritePieIzquierdo:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.2984513]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Sprite2D/SpritePieDerecho:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-32, 5)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Sprite2D/SpritePieDerecho:rotation")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [-0.2984513]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Sprite2D/SpriteCabeza:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1pbc6"]
+resource_name = "caida"
+length = 2.2
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SpriteTorso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 1.0333333, 1.5666667, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -3), Vector2(0, 0), Vector2(0, -3), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SpriteTorso:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.9, 1.5333333, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.08726646259971647, 0.03490658503988659, -0.05235987755982989, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SpritePieIzquierdo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.46666667, 1, 1.5333333, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-23, 11), Vector2(-23, 11), Vector2(-17, 3), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SpritePieIzquierdo:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.5, 1.0333333, 1.6666666, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.17627825445142767, -0.193731546971371, -0.15882496193148438, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D/SpritePieDerecho:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.53333336, 1.0333333, 1.6, 2.2333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-32, 5), Vector2(-27, 4), Vector2(-32, 5), Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D/SpritePieDerecho:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.56666666, 1.1, 1.7, 2.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.15882496193148438, -0.17627825445142767, -0.17627825445142767, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_id4wl"]
+resource_name = "defecto"
+length = 0.06666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SpriteTorso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.03333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SpriteTorso:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.03333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SpritePieIzquierdo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.01, 0.033333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SpritePieIzquierdo:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.033333335),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D/SpritePieDerecho:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.03333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D/SpritePieDerecho:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.03333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 0.0]
+}
+
+[sub_resource type="Animation" id="Animation_mwj0j"]
+resource_name = "idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SpriteTorso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.23333333, 0.6333333, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-1, 1), Vector2(1, -2), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SpritePieDerecho:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.01, 0.5129253, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 1), Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SpritePieIzquierdo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.01, 0.53333336, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 2), Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SpritePieDerecho:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.1, 0.43333334, 0.76666665),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.01745329251994329, -0.01745329251994329]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D/SpritePieIzquierdo:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 0.73333335),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.0, 0.01745329251994329, -0.01745329251994329]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D/SpriteCabeza:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.33333334, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(2, 2), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_0biot"]
+resource_name = "walk"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D/SpriteTorso:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-8, 4), Vector2(2, -1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D/SpritePieDerecho:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.76666665),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-8, 6), Vector2(18, -5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Sprite2D/SpritePieIzquierdo:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.01, 0.4, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.8604648, 2.7906985), Vector2(0, 0), Vector2(15, -7), Vector2(3, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Sprite2D/SpritePieIzquierdo:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0.008333325, 0.46666667, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [-0.024662942, 0.3001966313430245, -0.2984513]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Sprite2D/SpritePieDerecho:rotation")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.02443460952792021, -0.3001966313430245, 0.29845130209103077]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Sprite2D/SpriteTorso:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.033333335, 0.43333334, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [0.01745329251994329, 0.0, -0.01745329251994329]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mwj0j"]
+_data = {
+&"RESET": SubResource("Animation_orghr"),
+&"caida": SubResource("Animation_1pbc6"),
+&"defecto": SubResource("Animation_id4wl"),
+&"idle": SubResource("Animation_mwj0j"),
+&"walk": SubResource("Animation_0biot")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mwj0j"]
+size = Vector2(20, 44.36896)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=384753885]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=719793965]
+scale = Vector2(1.075, 1.075)
+
+[node name="SpriteCabeza" type="Sprite2D" parent="Sprite2D" unique_id=55660942]
+z_index = 2
+texture = ExtResource("1_0biot")
+
+[node name="SpriteTorso" type="Sprite2D" parent="Sprite2D" unique_id=1655403035]
+z_index = 1
+position = Vector2(-2, 1)
+texture = ExtResource("2_mwj0j")
+metadata/_edit_lock_ = true
+
+[node name="SpritePieIzquierdo" type="Sprite2D" parent="Sprite2D" unique_id=1034497736]
+z_index = 1
+position = Vector2(-23, 11)
+rotation = -0.2984513
+texture = ExtResource("3_dix3y")
+
+[node name="SpritePieDerecho" type="Sprite2D" parent="Sprite2D" unique_id=1734200418]
+position = Vector2(-32, 5)
+rotation = -0.2984513
+texture = ExtResource("4_1pbc6")
+
+[node name="manitos" type="Node2D" parent="Sprite2D" unique_id=1406572587]
+position = Vector2(-40, -34.418602)
+
+[node name="ArmaCajita" parent="Sprite2D/manitos" unique_id=1297001807 instance=ExtResource("6_orghr")]
+position = Vector2(-67.90697, 29.767437)
+
+[node name="ArmaCajita2" parent="Sprite2D/manitos" unique_id=2028635608 instance=ExtResource("6_0biot")]
+visible = false
+position = Vector2(-67.907, 29.767)
+
+[node name="ArmaCajita3" parent="Sprite2D/manitos" unique_id=257886489 instance=ExtResource("6_0biot")]
+visible = false
+position = Vector2(-67.906975, 29.76744)
+
+[node name="ArmaCajita4" parent="Sprite2D/manitos" unique_id=1943950515 instance=ExtResource("6_orghr")]
+visible = false
+position = Vector2(-68.837204, 29.76744)
+
+[node name="ArmaCajita5" parent="Sprite2D/manitos" unique_id=1024709948 instance=ExtResource("6_orghr")]
+visible = false
+position = Vector2(-68.837204, 29.76744)
+
+[node name="ArmaCajita6" parent="Sprite2D/manitos" unique_id=69973564 instance=ExtResource("6_0biot")]
+visible = false
+position = Vector2(-68.837204, 29.76744)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1689047281]
+libraries/ = SubResource("AnimationLibrary_mwj0j")
+
+[node name="cuerpoCaja" type="CollisionShape2D" parent="." unique_id=1473253214]
+z_index = 5
+position = Vector2(0, 60.10474)
+scale = Vector2(4.818001, 3.700999)
+shape = SubResource("RectangleShape2D_mwj0j")
+debug_color = Color(0, 0.64585036, 0.25781214, 0.41960785)
+
+[node name="cabezaCaja" type="CollisionShape2D" parent="." unique_id=1115523060]
+z_index = 5
+position = Vector2(0, -69.00001)
+scale = Vector2(4.818001, 2.0609975)
+shape = SubResource("RectangleShape2D_mwj0j")
+debug_color = Color(0, 0.7176322, 0.8691973, 0.41960785)

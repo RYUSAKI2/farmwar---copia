@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://1t2eh7yi6kgr"]
+
+[ext_resource type="Texture2D" uid="uid://bcbbf7ua1q8tp" path="res://texturas/terreno/escalera estrutura2.png" id="1_5lp1i"]
+
+[node name="Node2D" type="Node2D" unique_id=1704609858]
+
+[node name="Paredbolsasarena00b" type="Sprite2D" parent="." unique_id=1435549938]
+texture = ExtResource("1_5lp1i")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1166426086]
+scale = Vector2(0.6800003, 1.0901849)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D" unique_id=1995419847]
+position = Vector2(10.294114, 46.781055)
+scale = Vector2(9.806156, 9.453794)
+polygon = PackedVector2Array(-9.447842, -9.896779, -10.047705, -9.896779, -10, 0, 5.99863, 0)
